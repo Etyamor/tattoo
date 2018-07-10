@@ -6,9 +6,12 @@
   <title>ТатуХата</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="popup-overlay"></div>
   <div class="global-wrapper">
     <header>
       <section class="header-menu">
@@ -30,8 +33,8 @@
                 <a href="#"><i class="fas fa-angle-down"></i> RU</a>
               </div>
               <ul class="socials">
-                <li><a href="https://www.facebook.com/tattoohata/"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/tattoohata/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/tattoohata/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/tattoohata/" target="_blank"><i class="fab fa-instagram"></i></a></li>
               </ul>
               <div>
                 <a href="tel:380677361622"><i class="fas fa-phone"></i> 067 736 16 22</a>
@@ -49,14 +52,37 @@
             <li>
               <img src="img/romb1.png" alt="">
               <p>Мастерство</p>
+              <div class="romb-descr">
+                <div>
+                  <img src="img/mastery.png" alt="">
+                </div>
+                <p>Творим, совершенствуемся, 
+                   превосходим  ваши ожидания. 
+                   Ведущий мастер занимается татуировкой с 1995 года.
+                </p>
+              </div>
             </li>
             <li>
               <img src="img/romb2.png" alt="">
               <p>Актуальность</p>
+              <div class="romb-descr">
+                <div>
+                  <img src="img/actually.png" alt="">
+                </div>
+                <p>Следим за тенденциями и знаем, какую тату сделать,  чтобы к нам вернулись за второй
+                </p>
+              </div>
             </li>
             <li>
               <img src="img/romb3.png" alt="">
               <p>Безопасность</p>
+              <div class="romb-descr">
+                <div>
+                  <img src="img/safely.png" alt="">
+                </div>
+                <p>Работаем одноразовыми материалами и гарантируем стерильность
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -73,9 +99,151 @@
             </p>
           </div>
           <ul class="kraska">
-            <li class="kr-gr">Владимир<br>Орлов</li>
-            <li class="kr-rd">Ирина<br>Мартынова</li>
-            <li class="kr-bl">Андрей<br>Щуров</li>
+            <li class="kr-gr">
+              Владимир<br>Орлов
+              <div class="popup-master">
+                <div class="master-info">
+                  <div class="master-photo">
+                    <img src="img/orlov.jpg" alt="">
+                  </div>
+                  <div class="master-content">
+                    <h4>Орлов Владимир</h4>
+                    <p>
+                      <strong>Рисую всю свою жизнь.</strong>  В 1988 г. на флоте, как художник-оформитель, делал татушки сослуживцам.. Первую машинку подарил мне в 1992 г. друг Миша Алюков. Имею художественное образование и дипломы за участия в выставках в Санкт-Питербурге, Одессе, Львове, Киеве в наминациях: татуировка дня, лучшая черно-белая тату, за победу в 1 Всеукраинском фестивале и другие.<br>
+                      <strong>Хобби</strong> - походы, сплавы на байдарках, музыка.<br>
+                      <strong>Жизненный принцип:</strong> Жить по СОвести.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <div class="owl-carousel">
+                    <div class="portfolio-item">
+                      <img src="img/orlov1.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/orlov2.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/orlov3.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/orlov4.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/orlov5.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/orlov6.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/orlov7.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/orlov8.jpg" alt="">
+                    </div>
+                  </div>
+                  <a href="#" class="popup-button back-call">Запишись к мастеру</a>
+                </div>
+                <a href="#" class="popup-close">
+                  <img src="img/closebt.png" alt="X">
+                </a>
+              </div>
+            </li>
+            <li class="kr-rd">
+              Ирина<br>Мартынова
+              <div class="popup-master">
+                <div class="master-info">
+                  <div class="master-photo">
+                    <img src="img/martynova.jpg" alt="">
+                  </div>
+                  <div class="master-content">
+                    <h4>Ира Мартынова</h4>
+                    <p>
+                      <strong>Занимаюсь тату с 2017 г.</strong> Ррисую всю жизнь с детства. Обучалась в художественной школе, художественном училище, школе дизайна , Львовском политехе на архитектора, школе иконописи, школе батика. Проходила мастерклассы по живописи и скульптуре<br>
+                      <strong>Хобби</strong> - мне интересно всё новое, но к сожалению, времени не хватает на всё, поэтому  в основном работа, книги, поездки в горы (то что очень вдохновляет и перезагружает мозг)<br>
+                      <strong>Жизненный принцип:</strong> я не принципиальный человек принимаю происходящее и люблю наблюдать
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <div class="owl-carousel">
+                    <div class="portfolio-item">
+                      <img src="img/martynova1.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/martynova2.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/martynova3.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/martynova4.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/martynova5.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/martynova6.jpg" alt="">
+                    </div>
+                  </div>
+                  <a href="#" class="popup-button back-call">Запишись к мастеру</a>
+                </div>
+                <a href="#" class="popup-close">
+                  <img src="img/closebt.png" alt="X">
+                </a>
+              </div>
+            </li>
+            <li class="kr-bl">
+              Андрей<br>Щуров
+              <div class="popup-master">
+                <div class="master-info">
+                  <div class="master-photo">
+                    <img src="img/schurov.jpg" alt="">
+                  </div>
+                  <div class="master-content">
+                    <h4>Андрей Щуров</h4>
+                    <p>
+                      <strong>Занимаюсь тату с 2007 г.</strong>, а рисую еще со школы. Художественного образования нет, сам учился.
+                      Начинал в армии с портаков, потом затянуло 
+                      и начал изучать профессию глубже. 
+                      С 2016 г. делаю тату в Италии.<br>
+                      <strong>Хобби</strong> - музыка.<br>
+                      <strong>Жизненный принцип:</strong> Лучше ничего не делать, 
+                      чем делать "ничего".
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <div class="owl-carousel">
+                    <div class="portfolio-item">
+                      <img src="img/schurov1.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/schurov2.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/schurov3.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/schurov4.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/schurov5.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/schurov6.jpg" alt="">
+                    </div>
+                    <div class="portfolio-item">
+                      <img src="img/schurov7.jpg" alt="">
+                    </div>
+                  </div>
+                  <a href="#" class="popup-button back-call">Запишись к мастеру</a>
+                </div>
+                <a href="#" class="popup-close">
+                  <img src="img/closebt.png" alt="X">
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="photo-slider">
@@ -83,7 +251,7 @@
         </div>
         <div class="container">
           <div class="more">
-            <a href=""><p>Больше работ смотрите в</p> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/tattoohata/" target="_blank"><p>Больше работ смотрите в</p> <i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </section>
@@ -123,5 +291,8 @@
     </footer>
   </div>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=cyrillic" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -577,11 +577,38 @@ a.back-call {
   font-size: 25px;
   justify-content: center;
   background-position: top center;
-  position: relative;
-  
+  position: relative; 
 }
 
-.rombs img {
+.rombs li .romb-descr {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #73f882;
+  visibility: 0;
+  opacity: 0;
+  transition: all .4s;
+  font-size: 14px;
+  color: #242323;
+  font-weight: normal;
+  padding: 30px 10px 0;
+  box-shadow: 0px 23px 11.7px 1.3px rgba(0, 0, 0, 0.58);
+  line-height: 1.25;
+}
+
+.rombs li .romb-descr > div {
+  margin-bottom: 30px;
+}
+
+.rombs li:hover .romb-descr {
+  visibility: 1;
+  opacity: 1;
+}
+
+.rombs li > img {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -631,6 +658,7 @@ a.back-call {
   font-weight: bold;
   width: 332px;
   height: 559px;
+  cursor: pointer;
 }
 
 .kraska .kr-gr {
@@ -645,9 +673,127 @@ a.back-call {
   background-image: url(../img/bl.png);
 }
 
+/*popup here */
+
+.popup-master {
+  position: fixed;
+  max-width: 970px;
+  max-height: 605px;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  color: #242323;
+  justify-content: space-between;
+  z-index: 100;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+  cursor: default;
+}
+
+.popup-overlay {
+  z-index: 50;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.popup-overlay.popup-opened {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.popup-master.popup-opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-master .master-info {
+  width: 342px;
+}
+
+.popup-master .master-info .master-photo {
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.popup-master h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.popup-master p {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: justify;
+}
+
+.popup-master strong {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.slider-wrapper {
+  margin-left: 10px;
+}
+
+.owl-carousel {
+  width: 540px;
+  height: 465px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.owl-prev .fas, .owl-next .fas {
+  font-size: 60px;
+  color: #ffffff;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  transition: all .4s;
+}
+
+.owl-prev .fas:hover, .owl-next .fas:hover {
+  opacity: 1;
+}
+
+.owl-prev .fas {
+  left: 5px;
+}
+
+.owl-next .fas {
+  right: 5px;
+}
+
+.popup-button {
+  background-color: transparent;
+  box-shadow: 0px 7px 11.7px 1.3px rgba(0, 0, 0, 0.18);
+  color: #242323;
+  font-weight: 600;
+}
+
+.popup-close {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+
+/*popup here end */
+
 .photo-slider {
   margin-top: -33px;
-  /*overflow-x: auto;*/
   overflow-y: hidden;
 }
 
