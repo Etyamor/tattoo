@@ -8,6 +8,13 @@ jQuery(document).ready(function($) {
     dots:false
   });
 
+  $(".reviews-slider").slick({
+    slidesToShow:2,
+    variableWidth: true,
+    nextArrow: "<i class='fas fa-angle-right'></i>",
+    prevArrow: "<i class='fas fa-angle-left'></i>",
+  });
+
   $(".kraska li").click(function(){
     $(this).children(".popup-master").addClass("popup-opened");
     $(".popup-overlay").addClass("popup-opened");
@@ -23,5 +30,10 @@ jQuery(document).ready(function($) {
     $(".popup-master").removeClass("popup-opened");
     $(this).removeClass("popup-opened");
   });
+
+  $('.top-butt').click(function() {
+    $('html, body').animate({scrollTop: 0},500);
+    return false;
+  })
 
 });
