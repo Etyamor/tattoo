@@ -79,7 +79,7 @@
 .slick-slider{position:relative;display:block;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
 .slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
 .slick-list:focus{outline:none}
-.slick-list.dragging{cursor:pointer;cursor:hand}
+.slick-list.dragging{cursor:pointer}
 .slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}
 .slick-track:before,.slick-track:after{display:table;content:''}
@@ -324,14 +324,14 @@ form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:ver
 .rombs li:first-child{left:72px;bottom:70px}
 .rombs li:last-child{right:72px;bottom:70px}
 .our-masters .content{text-align:center}
-.separator-text .content{text-align:center;width:unset}
+.separator-text .content{text-align:center;width:auto}
 .wishes h3,.wishes .wish-subtitle{text-align:center}
 .wish-list-butt{text-align:center}
 .wish-list{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .wish-list ul li,.wish-list p{text-align:left}
 .wish-list p{width:250px}
 .contacts{text-align:center}
-.contacts .socials{margin-right:unset;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:auto}
+.contacts .socials{margin-right:auto;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:auto}
 .last-row .container{padding:0 60px}
 .banner,.map{height:332px}
 .reviews-slider{width:375px}
@@ -345,8 +345,8 @@ form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:ver
 .popup-master.popup-opened .back-call{margin-bottom:30px}
 }
 @media screen and (max-width: 720px) {
-.rombs{bottom:-110.5%;width:unset;height:870px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-left:-145px}
-.rombs li:first-child,.rombs li:last-child{left:unset;bottom:unset;right:unset}
+.rombs{bottom:-110.5%;width:auto;height:870px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-left:-145px}
+.rombs li:first-child,.rombs li:last-child{left:auto;bottom:auto;right:auto}
 .our-masters{padding-top:875px}
 .kraska{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .kraska .kr-gr{z-index:1}
@@ -374,7 +374,7 @@ form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:ver
 .wish-list{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .wish-list ul{margin-right:0}
 .req:first-child p:first-child,.req:first-child p:last-child{text-align:center}
-.req{padding:50px 30px 50px 20px;width:unset;height:unset}
+.req{padding:50px 30px 50px 20px;width:auto;height:auto}
 .req:first-child{background-position:65% 30%}
 .req:last-child{background-position:75% 95%;height:415px}
 .banner,.map{height:233px}
