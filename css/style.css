@@ -176,7 +176,7 @@ a.back-call{font-weight:600;font-size:16px;line-height:16px;padding:20px 0;width
 .popup-overlay.popup-opened{opacity:.8;visibility:visible}
 .popup-master.popup-opened{opacity:1;visibility:visible}
 .kraska .kr-gr,.kraska .kr-bl{z-index:2}
-.kraska .z-indexing{z-index:1000}
+.kraska .z-indexing{z-index:1000!important}
 .popup-master .master-info{width:342px}
 .popup-master .master-info .master-photo{margin-bottom:30px;border-radius:50%}
 .popup-master h4{font-size:25px;text-transform:uppercase;margin-bottom:25px}
@@ -245,7 +245,7 @@ form{display:flex;flex-direction:column;align-items:flex-start}
 .req:last-child{background-image:url(../img/people.png);background-position:center 95%;background-repeat:no-repeat}
 .req:last-child p{margin-bottom:20px}
 .req:last-child p:nth-child(2){font-size:18px;font-weight:400}
-.req .green.bold{font-weight:700}
+.req .green.bold{font-weight:700;font-size: 18px}
 .separator-social{padding:50px 0;background-color:#fff;color:#242323;font-size:18px;font-weight:700}
 .separator-social a .fab{font-size:40px;color:#242323}
 .separator-social a:last-child{margin-left:50px}
@@ -459,5 +459,157 @@ form{display:flex;flex-direction:column;align-items:flex-start}
 	.banner,
 	.map {
 		height:332px;
+	}
+	.reviews-slider {
+		width: 375px;
+	}
+	.popup-master {
+		width: 450px;
+	}
+	.popup-master .master-info {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+	.master-info .master-content {
+		width: 100%;
+	}
+	.slider-wrapper {
+		margin-left: 0;
+		overflow: hidden;
+	}
+	.owl-carousel.owl-loaded {
+		display: inline-block;
+	}	
+	.owl-carousel {
+		width: 390px;
+		height: 335px;
+	}
+	.portfolio-item {
+		background-size: cover;
+	    background-position: bottom;
+		width: 387px;
+		height: 334px;
+	}
+	.popup-master.popup-opened .back-call {
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 720px){
+	.rombs {
+		bottom: -110.5%;
+		width: unset;
+		height: 870px;
+		flex-direction: column;
+		margin-left: -145px;
+	}
+	.rombs li:first-child,
+	.rombs li:last-child {
+		left: unset;
+    	bottom: unset;
+    	right: unset;
+	}
+	.our-masters {
+		padding-top: 875px;
+	}
+	.kraska {
+		align-items: center;
+    	flex-direction: column;
+	}
+	.kraska .kr-gr {
+		z-index: 1;
+	}
+	.kraska .kr-rd {
+		z-index: 2;
+	}
+	.kraska .kr-bl {
+		z-index: 3;
+	}
+	.more {
+		text-align: center;
+	}
+	.telephone {
+		display: none;
+	}
+	.form {
+		margin-left: 0;
+	}
+	.price-info .flex-block {
+		justify-content: center;
+		text-align: center;
+	}
+	.price-info .flex-block {
+		align-items: center;
+	}
+	.bonus {
+		top: 44%;
+	}
+	.separator-social .flex-block p:first-of-type {
+		display: none;
+	}
+	.separator-social a:last-child {
+		margin-left: 20px;
+	}
+	.tel-foot a:last-child {
+		margin-left: 0;
+		display: none;
+	}
+	.last-row .socials {
+		margin-right: 0;
+	}
+	.last-row .container {
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: 630px){
+	.header-menu .logo {
+		position: static;
+	}
+	.header-menu .socials {
+		display: flex;
+		order: 1;
+		margin-right: 0;
+		margin-left: 20px;
+	}
+	.lang {
+    	margin-right: 15px;
+	}
+	.main-screen h1 {
+		padding: 0 30px;
+	}
+	.wishes-blocks {
+		width: 272px;
+	}
+	.wish-list p:before {
+		left: -75px;
+    	top: 13px;
+    	background-size: 70%;
+	}
+	.wish-list p {
+		width: 170px;
+	}
+	.wish-list {
+		justify-content: space-between;
+	}
+	.wish-list ul {
+		margin-right: 0;
+	}
+	.req:first-child p:first-child,
+	.req:first-child p:last-child {
+		text-align: center;
+	}
+	.req {
+		padding: 50px 30px 50px 20px;
+		width: unset;
+		height: unset;
+	}
+	.req:first-child {
+		background-position: 65% 30%;
+	}
+	.req:last-child {
+		background-position: 75% 95%;
+		height: 415px;
+	}
+	.banner, .map {
+		height: 233px;
 	}
 }

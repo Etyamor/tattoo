@@ -21,15 +21,24 @@ jQuery(document).ready(function($) {
     variableWidth: true,
     nextArrow: "<img src='img/rightarr.png'>",
     prevArrow: "<img src='img/leftarr.png'>",
+    responsive: [
+    {
+      breakpoint: 860,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
   });
 
   $(".kraska li").click(function(){
+  	$('body').css('overflow-y','hidden');
   	$(this).addClass("z-indexing");
     $(this).children(".popup-master").addClass("popup-opened");
     $(".popup-overlay").addClass("popup-opened");
   });
 
   $(".popup-close").click(function(e){
+  	$('body').css('overflow-y','visible');
   	$(".kraska li").removeClass("z-indexing");
     $(".popup-master").removeClass("popup-opened");
     $(".popup-overlay").removeClass("popup-opened");
@@ -37,6 +46,7 @@ jQuery(document).ready(function($) {
   });
 
   $(".popup-overlay").click(function(){
+  	$('body').css('overflow-y','visible');
   	$(".kraska li").removeClass("z-indexing");
     $(".popup-master").removeClass("popup-opened");
     $(this).removeClass("popup-opened");
