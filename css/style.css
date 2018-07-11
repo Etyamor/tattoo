@@ -413,6 +413,7 @@ a {
 }
 
 .global-wrapper {
+  overflow: hidden;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
@@ -868,6 +869,29 @@ a.back-call {
 .price-info {
   height: 690px;
   padding: 130px 0 90px;
+  background-image: url('../img/guitar-skull.png');
+  background-repeat: no-repeat;
+  background-position: 75% bottom;
+}
+
+.price-info h3 {
+  color: #fffbf7;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.price-info p {
+  font-size: 18px;
+  color: #fffbf7;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.green {
+  font-weight: bold;
+  color: #73f882!important;
 }
 
 .telephone {
@@ -883,7 +907,301 @@ a.back-call {
   margin-bottom: 10px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form {
+  margin-left: -90px;
+}
+
+.form-flex {
+  width: 100%;
+}
+
+.in-file {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-bottom: 39px;
+}
+
+.in-tel {
+  width: 203px;
+  height: 60px;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  border: 1px solid #73f882;
+  background-color: #fefefe;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #242323;
+}
+
+.in-sub {
+  width: 253px;
+  height: 59px;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  border: 1px solid #73f882;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  transition: all .4s;
+}
+
+.in-sub:hover {
+  color: #111111;
+  background-color: #73f882;
+}
+
+.bonus {
+  text-align: right;
+  position: relative;
+}
+
+.bonus p:first-of-type {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.bonus p:last-of-type {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  bottom: -75px;
+  right: 0;
+}
+
+.bonus p:last-of-type:before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  display: block;
+  content: '';
+  width: 80px;
+  height: 40px;
+  background-image: url(../img/arrow-left.png);
+  background-repeat: no-repeat;
+}
+
+.bonus .fab {
+  font-size: 30px;
+}
+
+.bonus a:last-child {
+  margin-left: 20px;
+}
+
 /* price info end */
+
+/* wishes */
+
+.wishes {
+  padding: 140px 0 200px;
+  background-image: url(../img/wish-bg.png);
+  background-position: top;
+}
+
+.wishes h3, .wishes h4 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.wishes h3 {
+  margin-bottom: 20px;
+}
+
+.wishes h4 {
+  align-self: center;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  z-index: 5;
+}
+
+.wishes h5 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.wish-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 90px;
+}
+
+.wishes-blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 190px;
+}
+
+.wish {
+  position: relative;
+  width: 272px;
+  height: 550px;
+  box-shadow: 0 23px 12px 1px rgba(0, 0, 0, 0.58);
+  background-color: rgba(27, 24, 23, 0.88);
+  padding: 300px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.wish img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.wish p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.07px;
+  z-index: 5;
+}
+
+.wish-list-butt {
+  margin-bottom: 200px;
+}
+
+.wish-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.wish-list ul {
+  margin-right: 150px;
+}
+
+.wish-list ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.wish-list ul li i{
+  margin-right: 3px;
+}
+
+.wish-list p {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.wish-list p:before {
+  position: absolute;
+  left: -125px;
+  top: -7px;
+  display: block;
+  content: '';
+  width: 80px;
+  height: 40px;
+  background-image: url(../img/arrow-left.png);
+  background-repeat: no-repeat;
+}
+
+.become-master {
+  display: flex;
+  justify-content: space-between;
+}
+
+.req {
+  background-color: #242323;
+  width: 573px;
+  height: 415px;
+  box-shadow: 0 23px 12px 1px rgba(0, 0, 0, 0.58);
+  border: 1px solid #2a2a2a;
+  padding: 50px 40px 50px 75px;
+}
+
+.req p {
+  color: #fffefe;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.req .normal {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.req li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.req li img {
+  margin-right: 7px;
+}
+
+.req:first-child {
+  background-image: url(../img/wish-become.png);
+  background-position: 55% 33%;
+  background-repeat: no-repeat;
+}
+
+.req:last-child {
+  background-image: url(../img/people.png);
+  background-position: center 95%;
+  background-repeat: no-repeat;
+}
+
+.req:last-child p {
+  margin-bottom: 20px;
+}
+
+.req:last-child p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.req .green.bold {
+  font-weight: bold;
+}
+
+/* wishes end */
+
+/* separator social */
+
+.separator-social {
+  padding: 50px 0;
+  background-color: #fff;
+  color: #242323;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.separator-social a .fab {
+  font-size: 40px;
+  color: #242323; 
+}
+
+.separator-social a:last-child {
+  margin-left: 50px;
+}
+
+/* separator social end */
 
 /* reviews */
 
