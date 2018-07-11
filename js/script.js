@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     items:1,
     merge:true,
     nav:true,
-    navText: ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
+    navText: ["<img src='img/leftarr.png' class='left'>","<img src='img/rightarr.png' class='right'>"],
     navClass: ['owl-prev','owl-next'],
     dots:false
   });
@@ -19,22 +19,25 @@ jQuery(document).ready(function($) {
   $(".reviews-slider").slick({
     slidesToShow:2,
     variableWidth: true,
-    nextArrow: "<i class='fas fa-angle-right'></i>",
-    prevArrow: "<i class='fas fa-angle-left'></i>",
+    nextArrow: "<img src='img/rightarr.png'>",
+    prevArrow: "<img src='img/leftarr.png'>",
   });
 
   $(".kraska li").click(function(){
+  	$(this).addClass("z-indexing");
     $(this).children(".popup-master").addClass("popup-opened");
     $(".popup-overlay").addClass("popup-opened");
   });
 
   $(".popup-close").click(function(e){
+  	$(".kraska li").removeClass("z-indexing");
     $(".popup-master").removeClass("popup-opened");
     $(".popup-overlay").removeClass("popup-opened");
     return false;
   });
 
   $(".popup-overlay").click(function(){
+  	$(".kraska li").removeClass("z-indexing");
     $(".popup-master").removeClass("popup-opened");
     $(this).removeClass("popup-opened");
   });
@@ -42,6 +45,13 @@ jQuery(document).ready(function($) {
   $('.top-butt').click(function() {
     $('html, body').animate({scrollTop: 0},500);
     return false;
+  })
+
+  $('.burger-butt').click(function(){
+  	$('.header-menu nav').toggleClass('menu-opened');
+  })
+  $('.close-menu').click(function(){
+  	$('.header-menu nav').toggleClass('menu-opened');
   })
 
 });
