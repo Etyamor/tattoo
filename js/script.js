@@ -60,8 +60,24 @@ jQuery(document).ready(function($) {
   $('.burger-butt').click(function(){
   	$('.header-menu nav').toggleClass('menu-opened');
   })
-  $('.close-menu').click(function(){
+  $('nav .close-menu').click(function(){
   	$('.header-menu nav').toggleClass('menu-opened');
   })
+  $('.contact-butt').click(function(){
+  	$('.header-menu .contact-menu').css('display','block');
+  })
+  $('.contact-menu .close-menu').click(function(){
+  	$('.contact-menu').css('display','none');
+  })
 
+  $('.open-form').click(function(){
+  	$('#popup-form').css('display','flex');
+  	return false
+  })
+
+  $('.form-popup-close').click(function(){
+  	$('#popup-form').css('display','none');
+  	return false
+  })
+  
 });
